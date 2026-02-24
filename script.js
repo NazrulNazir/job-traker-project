@@ -101,7 +101,7 @@ let allRejected = [];
         interview.style.backgroundColor = 'white';
         renderRejected()
         renderInterview()
-        allDataCount()
+        // allDataCount()
     }
 
 
@@ -235,6 +235,7 @@ document.getElementById('all-content-btn')
 // all, reject and interview button
 const jobBtn = document.getElementsByClassName('job-btn');
 console.log(jobBtn);
+
 
 function allDataCount(){
     jobTotal.innerText = totalJob;
