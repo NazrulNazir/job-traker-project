@@ -21,6 +21,7 @@ const totalRejected = document.getElementById('total-rejected');
 
 const totalJob = content.children.length;
 jobTotal.innerText = totalJob;
+kotoJob.innerText = `${totalJob} jobs`;
 
 
 
@@ -80,7 +81,7 @@ let allRejected = [];
 
         renderInterview()
         renderRejected()
-        allDataCount()
+        // allDataCount()
     }
 
     // rejected clicked;
