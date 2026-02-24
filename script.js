@@ -114,7 +114,7 @@ let allRejected = [];
         interviewArea.innerHTML = '';
         if(allInterview.length === 0){
             interviewArea.innerHTML = `
-            <div class="flex flex-col justify-center items-center py-20">
+            <div class="flex flex-col justify-center items-center py-20 bg-white rounded-lg">
                 <img src="./jobs.png" alt="">
                 <div class="mt-4 text-center">
                     <h3 class="text-gray-800 font-semibold text-xl">No jobs available</h3>
@@ -140,8 +140,8 @@ let allRejected = [];
 
                         <div>
                             <p class="description">${interveiw.description}</p>
-                            <button class="interview-btn px-5 py-2 rounded-md my-3 cursor-pointer text-sm font-semibold text-green-600 border border-green-600 mr-4 mt-5">INTERVIEW</button>
-                            <button class="reject-btn px-5 py-2 rounded-md my-3 cursor-pointer text-sm font-semibold text-red-500 border border-red-500">REJECTED</button>
+                            <button class="interview-btn px-5 py-2 rounded-md my-3 cursor-pointer text-sm font-semibold text-green-600 border border-green-600 hover:text-green-500 hover:border-green-500 mr-4 mt-5">INTERVIEW</button>
+                            <button class="reject-btn px-5 py-2 rounded-md my-3 cursor-pointer text-sm font-semibold text-red-500 border border-red-500 hover:border-red-400 hover:text-red-400">REJECTED</button>
                         </div>
                     </div>
                     <button class="delete-btn text-red-500 border border-red-400 mt-5 px-2 py-3 rounded-md cursor-pointer"><i class="fa-solid fa-trash-can"></i></button>
@@ -163,7 +163,7 @@ let allRejected = [];
         rejectedArea.innerHTML = '';
         if(allRejected.length === 0){
             rejectedArea.innerHTML = `
-            <div class="flex flex-col justify-center items-center py-20">
+            <div class="flex flex-col justify-center items-center py-20 bg-white rounded-lg">
                 <img src="./jobs.png" alt="">
                 <div class="mt-4 text-center">
                     <h3 class="text-gray-800 font-semibold text-xl">No jobs available</h3>
@@ -188,11 +188,11 @@ let allRejected = [];
 
                     <div>
                         <p class="description">${rejected.description}</p>
-                        <button class="interview-btn px-5 py-2 rounded-md my-3 cursor-pointer text-sm font-semibold text-green-600 border border-green-600 mr-4 mt-5">INTERVIEW</button>
-                        <button class="reject-btn px-5 py-2 rounded-md my-3 cursor-pointer text-sm font-semibold text-red-500 border border-red-500">REJECTED</button>
+                        <button class="interview-btn px-5 py-2 rounded-md my-3 cursor-pointer text-sm font-semibold text-green-600 border border-green-600 hover:text-green-500 hover:border-green-500 mr-4 mt-5">INTERVIEW</button>
+                        <button class="reject-btn px-5 py-2 rounded-md my-3 cursor-pointer text-sm font-semibold text-red-500 border border-red-500 hover:border-red-400 hover:text-red-400">REJECTED</button>
                     </div>
                 </div>
-                <button class="delete-btn text-red-500 border border-red-400 mt-5 px-2 py-3 rounded-md cursor-pointer"><i class="fa-solid fa-trash-can"></i></button>
+                <button class="delete-btn text-gray-500 border border-gray-500 mt-5 px-2 py-3 rounded-md cursor-pointer"><i class="fa-solid fa-trash-can"></i></button>
             
             `
             rejectedArea.appendChild(div);
