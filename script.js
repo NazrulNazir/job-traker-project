@@ -175,7 +175,7 @@ let allRejected = [];
         }
         for(let rejected of allRejected){
             const div = document.createElement('div');
-            div.className = 'job-card bg-white px-5 py-5 rounded-lg text-gray-600 flex gap-5 justify-between items-start';
+            div.className = 'job-card bg-white px-5 py-5 rounded-lg text-gray-600 flex gap-5 justify-between items-start mb-5';
             div.innerHTML =    `
                 <div>
                     <div>
